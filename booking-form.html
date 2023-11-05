@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page - Dekhbhal</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- swiper css  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body class="bg-light">
+    <!-- header section start here  -->
+    <header class="fixed-top bg-white br__bt" id="header">
+        <div class="container d-flex justify-content-between align-items-center py-2">
+            <div class="menu">
+                <img src="./assets/menu.png" alt="">
+            </div>
+            <div class="logo">
+                <h1>
+                    <a href="./">DekBhal</a>
+                </h1>
+            </div>
+            <div class="nolo d-flex gap-1">
+                <div class="bell d-flex align-items-center justify-content-center bg-light br_all rounded-circle">
+                    <a href="#">
+                        <img src="./assets/bell.svg" alt="">
+                    </a>
+                </div>
+                <div class="user d-flex align-items-center justify-content-center bg-light br_all rounded-circle">
+                    <a href="#">
+                        <img src="./assets/user.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header section start here  -->
+    
+    <section class="booking__form mt-5 container">
+        <div class="row mt-5 ">
+           <div class="col-12 mt-4">
+            <h2 class="mt-2">Book Nursing Attenders</h2>
+           </div>
+           <div class="form__div mt-3">
+            <form action="" id="UserBookingForm" class="mb-3">
+                <div class="row mt-3">
+                    <div class="col-12 my-2">
+                        <label for="Full Name">
+                            Full Name
+                        </label>
+                        <input type="email" id="bName" class="form-control"/>
+                        <div class="error-message"></div>
+                    </div>
+                    <div class="col-12 my-2">
+                        <label for="Phone Number">
+                            Phone Number
+                        </label>
+                        <input type="number" id="bNumber" class="form-control"/>
+                        <div class="error-message"></div>
+                    </div>
+                    <div class="col-12 my-2">
+                        <label for="For How Many Days You Want ?">
+                            For How Many Days You Want ?
+                        </label>
+                        <input type="number" id="bNumber" class="form-control"/>
+                        <div class="error-message"></div>
+                    </div>
+                    <div class="col-12 my-2">
+                        <label for="For How Many Days You Want ?">
+                            For How Many Days You Want ?
+                        </label>
+                        <input type="number" id="bNumber" class="form-control"/>
+                        <div class="error-message"></div>
+                    </div>
+                    <div class="col-12 my-2">
+                        <label for="For how many Hours you want in a Day ?">
+                            For how many Hours you want in a Day ?
+                        </label>
+                        <select name="hours" id="bhours" class="form-control">
+                            <option value="12 Hours" selected>12 Hours</option>
+                            <option value="24 Hours">24 Hours</option>
+                        </select>
+                        <div class="error-message"></div>
+                    </div>
+                    <div class="col-12 my-2">
+                        <label for="For How Many Days You Want ?">
+                           Address
+                        </label>
+                        <input type="text" id="bAdd" class="form-control"/>
+                        <div class="error-message"></div>
+                    </div>
+                    <div class="col-12 my-2 mb-5">
+                        <input type="submit" value="Continue to Payment" class="form-control custom__button mb-5"/>
+                    </div>
+                </div>
+            </form>
+        </div>
+        </div>
+        
+    </section>
+
+    <!-- Footer section start here  -->
+    <footer class="footer fixed-bottom shadow-sm bg-white py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-3 d-flex justify-content-center align-items-center flex-column gap-2">
+                    <img src="./assets/bottom-bar/home.svg" alt="">
+                    <a href="#">Home</a>
+                </div>
+                <div class="col-3 d-flex justify-content-center align-items-center flex-column gap-2">
+                    <img src="./assets/bottom-bar/calender.svg" alt="">
+                    <a href="#">Booking</a>
+                </div>
+                <div class="col-3 d-flex justify-content-center align-items-center flex-column gap-2">
+                    <img src="./assets/bottom-bar/user.svg" alt="">
+                    <a href="#">Refer</a>
+                </div>
+                <div class="col-3 d-flex justify-content-center align-items-center flex-column gap-2">
+                    <img src="./assets/bottom-bar/help.svg" alt="">
+                    <a href="#">Help</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer section end here  -->
+
+
+
+    <!-- swiper script  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- bootstrap script  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <!-- jquery script  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- custom script  -->
+    <script src="./js/app.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+input.form-control{
+  border: 2px solid var(--border-color) ;
+  margin-top: .8rem ;
+  padding: .59rem 0.75rem;
+  border-radius: 5px;
+  margin-bottom: .4rem;
+  margin-top: 8px;
+}
+
+input.form-control:focus{
+  border: 2px solid var(--primary-color) ;
+  outline: none ;
+  box-shadow: none ;
+}
+select.form-control{
+  border: 2px solid var(--border-color) ;
+  margin-top: .8rem ;
+  padding: .59rem 0.75rem;
+  border-radius: 5px;
+  margin-bottom: .4rem;
+  margin-top: 8px;
+}
+
+select.form-control:focus{
+  border: 2px solid var(--primary-color) ;
+  outline: none ;
+  box-shadow: none ;
+}
+
+label{
+  color: var(--black-extra-light);
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.custom__button{
+  background-color: var(--primary-color) !important;
+  color: var(--white) !important;
+  padding: 1rem !important;
+  border-radius: 8px !important;
+  font-size: 1.3rem !important;
+}
+
+:root{
+    --primary-color : #414BB2;
+    --dark-white : #E6E6E6;
+    --white : #fff;
+    --black : #000;
+    --black-light : rgba(0,0,0,0.8);
+    --black-medium-light : rgba(0,0,0,0.8);
+    --black-extra-light : rgba(0,0,0,0.6);
+    --border-color : rgba(0,0,0,0.3);
+}
+
+.menu img {
+    width: 30px;
+    height: 30px;
+}
+
+a{
+    text-decoration: none !important;
+    color: rgba(0, 0, 0, .8) !important;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6,p{
+    margin-bottom: 0px !important;
+}
+
+.mb-6{
+  margin-bottom: 4.5rem;
+}
+
+/* for border add this class  */
+/* for bottom border  */
+.br__bt {
+ border-bottom: 1px solid var(--border-color);
+}
+
+.br_all{
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+}
+
+.bell,.user {
+    width: 30px;
+    height: 30px;
+}
+
+.banner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: var(--dark-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 200px !important;
+
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .care__service h2 {
+    font-size: 1.5rem;
+  }
+
+  .button__custom{
+    padding: 10px 30px;
+    background-color: var(--primary-color);
+    color: var(--white) !important;
+    font-size: 15px;
+    border-radius: 10px;
+  }
+
+  .footer img{
+    width: 25px;
+    height: 25px;
+  }
+
+  .heading__div {
+    width: 100%;
+    height: 23vh;
+    background-color: var(--primary-color);
+    color: #fff;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 1.5rem;
+  }
+
+  .heading__div h1{
+    font-size: 2rem;
+    line-height: 3.1rem;
+    font-weight: 500;
+  }
+
+  .form__already span{
+    color: var(--black-extra-light) !important;
+    font-weight: 500;
+  }
+
+  .form__already a{
+     border-bottom: 1px solid var(--black-light);
+  }
+
+  input.fieldEmpty{
+    border: 2px solid red;
+  }
+
+  .error-message{
+    color: red;
+  }
+
