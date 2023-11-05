@@ -12,6 +12,7 @@
  const showBottomSheet = () => {
      bottomSheet.classList.add("show");
      document.body.style.overflowY = "hidden";
+     document.body.classList.add("bodyfix");
      updateSheetHeight(50);
  }
  
@@ -25,6 +26,7 @@
  const hideBottomSheet = () => {
      bottomSheet.classList.remove("show");
      document.body.style.overflowY = "auto";
+     document.body.classList.remove("bodyfix");
  }
  
  // Sets initial drag position, sheetContent height and add dragging class to the bottom sheet
