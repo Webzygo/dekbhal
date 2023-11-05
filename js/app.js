@@ -136,31 +136,12 @@ $(document).ready(function() {
         }
     });
     
-    //Pwa Color Change
-    // Get the meta tag element
-    const themeColorMetaTag = document.querySelector("meta[name='theme-color']");
     
-    // Function to change the theme color based on the URL
-    function changeThemeColor() {
-        // Get the current URL
-        const currentUrl = window.location.href;
-
-        // Check if the URL contains "login" or "register"
-        if (currentUrl.includes("login") || currentUrl.includes("register")) {
-            // Change the theme color for these pages
-            themeColorMetaTag.setAttribute("content", "#414BB2");
-        } else {
-            // Reset to the default theme color for other pages
-            themeColorMetaTag.setAttribute("content", "#fff");
-        }
-    }
     
     
 
 
     //Home Page Slider Function Call
     swiperSlider ();
-    changeThemeColor();
-    
-    window.addEventListener("popstate", changeThemeColor);
+   
 });
