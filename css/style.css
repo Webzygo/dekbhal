@@ -87,9 +87,9 @@ a{
 }
 
 .bodyfix{
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
+  width: 100vw !important;
+  height: 100vh !important;
+  overflow: hidden !important;
 }
 
 .mb-7{
