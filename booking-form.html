@@ -55,7 +55,7 @@
                         <label for="Full Name">
                             Full Name
                         </label>
-                        <input type="email" id="bName" class="form-control"/>
+                        <input type="text" id="bName" class="form-control"/>
                         <div class="error-message"></div>
                     </div>
                     <div class="col-12 my-2">
@@ -69,14 +69,7 @@
                         <label for="For How Many Days You Want ?">
                             For How Many Days You Want ?
                         </label>
-                        <input type="number" id="bNumber" class="form-control"/>
-                        <div class="error-message"></div>
-                    </div>
-                    <div class="col-12 my-2">
-                        <label for="For How Many Days You Want ?">
-                            For How Many Days You Want ?
-                        </label>
-                        <input type="number" id="bNumber" class="form-control"/>
+                        <input type="number" id="bDays" class="form-control"/>
                         <div class="error-message"></div>
                     </div>
                     <div class="col-12 my-2">
@@ -90,17 +83,23 @@
                         <div class="error-message"></div>
                     </div>
                     <div class="col-12 my-2">
+                        <label for="For how many Hours you want in a Day ?">
+                          Service Start Date 
+                        </label>
+                       <input type="date" id="bDate" class="form-control">
+                        <div class="error-message"></div>
+                    </div>
+                    <div class="col-12 my-2">
                         <label for="For How Many Days You Want ?">
                            Address
                         </label>
-                        <input type="text" id="bAdd" class="form-control"/>
+                        <!-- <input type="text" id="bAdd" class="form-control"/> -->
+                        <textarea  id="bAdd" class="d-block form-control"  rows="05"></textarea>
                         <div class="error-message"></div>
                     </div>
                 </div>
-            </form>
-            <div class="col-12 mt-2 mb-7">
                 <button class="custom__button mb-7 show-modal">Continue to Payment</button>
-            </div>
+            </form>
         </div>
         </div>
         <div class="bottom-sheet">
@@ -110,13 +109,23 @@
                 <div class="drag-icon"><span></span></div>
               </div>
               <div class="body">
-                <h2>Bottom Sheet Modal</h2>
-                <p>Create a bottom sheet modal that functions similarly to Facebook modal using HTML CSS and JavaScript. This modal allows user to view its contents, drag it up or down, and close it. It also works on touch-enabled devices. Lorem Ipsum are simply dummy text of there printing and typesetting industry. Lorem new Ipsum has been the industryss standard dummy text ever since the 1500s, when an off unknown printer tooks a galley of type and scrambled it to makes type spemen book It has survived not only five centuries.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quae facere, quaerat deleniti, voluptates optio ipsam ipsum beatae, maxime quis ea quasi minima numquam. Minima accusamus reiciendis, impedit blanditiis nulla quia? Odio deleniti commodi id nesciunt voluptas cumque odit, vel molestias ratione sit consectetur inventore error ullam magni labore voluptate doloribus sed similique. Delectus non pariatur eligendi eos voluptatum provident eveniet consequuntur. Laboriosam, nesciunt reiciendis libero sunt adipisci numquam voluptas ullam, iure voluptates soluta mollitia quam voluptatem? Nemo, ipsum magnam.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum eligendi commodi tenetur est beatae cupiditate incidunt aspernatur asperiores repudiandae? Odit, nulla modi ducimus assumenda ad voluptatem explicabo laudantium est unde ea similique excepturi fugiat nisi facere ab pariatur libero eius aperiam, non accusantium, asperiores optio. Accusantium, inventore in. Quaerat exercitationem aut, alias dolorem facere atque sint quo quasi vitae sed corrupti perferendis laborum eligendi repudiandae esse autem doloribus sapiente deleniti.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde voluptates, animi ipsa explicabo assumenda molestiae adipisci. Amet, dignissimos reiciendis, voluptatibus placeat quo ab quibusdam illum repellat, ad molestias quaerat saepe modi aperiam distinctio dolore id sapiente molestiae quas! Animi optio nobis nesciunt pariatur? Non necessitatibus mollitia veniam nihil eos natus libero quaerat vitae maiores. Praesentium nesciunt natus tempora. Doloremque, fuga?</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt deleniti a non dolorem delectus possimus distinctio! Nemo officiis tempore quos culpa fugit iste suscipit minus voluptatem, officia dicta ad deleniti harum voluptatibus dignissimos in, commodi placeat accusamus sint tenetur non natus? Error fugit quasi repudiandae mollitia doloribus officia eius magnam ratione soluta aut in iusto vel ut minima, at facere, minus sequi earum dolores animi ipsa nihil labore. Odio eius vitae iste repellendus molestias, amet sapiente laudantium optio, provident dignissimos voluptatum nesciunt nemo magni obcaecati commodi officiis delectus esse sed.</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat atque labore eligendi iusto sint! Fuga vel eius dolor eligendi ab cumque, maxime commodi, ducimus inventore temporibus illo delectus iste, quisquam ipsum labore eaque ipsa soluta praesentium voluptatem accusamus amet recusandae. Veniam necessitatibus laboriosam deleniti maxime, saepe vitae officia tempora voluptates voluptas ratione fugiat ad? Nostrum explicabo, earum dolor magnam commodi maiores iusto delectus porro ducimus architecto non enim eum, perspiciatis facere mollitia. Minus, mollitia animi! Nostrum deleniti, error quia hic eum modi? Corrupti illo provident dolores qui enim, expedita adipisci.</p>
+                <h1>Bookings Details</h1> 
+                <div class="drawer__container d-flex flex-column justify-content-between">
+                    <div class="bottom__drawer__details p-3 mt-4">
+
+                    </div>
+                    <div class="bottom__drawer__total  d-flex justify-content-between mt-5  p-3 align-items-center">
+                        <h3>
+                            Total
+                        </h3>
+                        <h3>
+                            Rs 15,999
+                        </h3>
+                    </div>
+                    <div class=" my-3">
+                        <button class="form-control custom__button">Book Now</button>
+                    </div>
+                </div>
               </div>
             </div>
           </div>
@@ -160,7 +169,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <!-- custom script  -->
     <script src="./js/app.js"></script>
-    <script src="./js/my-drawer.js"></script>
+    <!-- <script src="./js/my-drawer.js"></script> -->
+    <script src="./js/my-form-drawer.js"></script>
     <script src="./js/myscript.js"></script>
     <script src="./js/service-worker.js"></script>
 
